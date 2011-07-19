@@ -17,48 +17,25 @@
 
 package org.openengsb.domain.notification.model;
 
-import java.util.Collections;
 import java.util.List;
 
-public class Notification {
-    private String subject;
-    private String message;
-    private String recipient;
-    private List<Attachment> attachments;
+import org.openengsb.core.api.model.OpenEngSBModel;
 
-    public String getSubject() {
-        return subject;
-    }
+public interface Notification extends OpenEngSBModel {
 
-    public void setSubject(String subject) {
-        this.subject = subject;
-    }
+    String getSubject();
 
-    public String getMessage() {
-        return message;
-    }
+    void setSubject(String subject);
 
-    public void setMessage(String message) {
-        this.message = message;
-    }
+    String getMessage();
 
-    public String getRecipient() {
-        return recipient;
-    }
+    void setMessage(String message);
 
-    public void setRecipient(String recipient) {
-        this.recipient = recipient;
-    }
+    String getRecipient();
 
-    public void setAttachments(List<Attachment> attachments) {
-        this.attachments = attachments;
-    }
+    void setRecipient(String recipient);
 
-    public List<Attachment> getAttachments() {
-        if (attachments == null) {
-            return Collections.emptyList();
-        }
-        return Collections.unmodifiableList(attachments);
-    }
+    void setAttachments(List<Attachment> attachments);
 
+    List<Attachment> getAttachments();
 }
