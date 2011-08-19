@@ -17,9 +17,9 @@
 
 package org.openengsb.domain.notification.model;
 
-import org.openengsb.core.api.ekb.EKBProxyable;
+import org.openengsb.core.api.model.OpenEngSBModel;
 
-public interface Attachment extends EKBProxyable {
+public interface Attachment extends OpenEngSBModel {
 
     void setData(byte[] data);
     
