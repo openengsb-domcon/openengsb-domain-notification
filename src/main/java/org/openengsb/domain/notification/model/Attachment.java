@@ -17,32 +17,20 @@
 
 package org.openengsb.domain.notification.model;
 
-public class Attachment {
-    private byte[] data;
-    private String type;
-    private String name;
+import org.openengsb.core.api.model.OpenEngSBModel;
 
-    @SuppressWarnings("unused")
-    private Attachment() {
-        // for the rpc framework
-    }
+public interface Attachment extends OpenEngSBModel {
 
-    public Attachment(byte[] data, String type, String name) {
-        this.data = data;
-        this.type = type;
-        this.name = name;
-    }
+    void setData(byte[] data);
+    
+    byte[] getData();
+    
+    void setType(String type);
 
-    public byte[] getData() {
-        return data;
-    }
+    String getType();
+    
+    void setName(String name);
 
-    public String getType() {
-        return type;
-    }
-
-    public String getName() {
-        return name;
-    }
+    String getName();
 
 }
