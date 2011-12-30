@@ -20,8 +20,10 @@ package org.openengsb.domain.notification;
 import org.openengsb.core.api.Domain;
 import org.openengsb.domain.notification.model.Notification;
 
+// @extract-start NotificationDomain
 public interface NotificationDomain extends Domain {
 
     void notify(Notification notification);
 
 }
+// @extract-end

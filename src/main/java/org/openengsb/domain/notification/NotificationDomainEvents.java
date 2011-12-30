@@ -19,6 +19,8 @@ package org.openengsb.domain.notification;
 
 import org.openengsb.core.api.DomainEvents;
 
+// @extract-start NotificationDomainEvents
 public interface NotificationDomainEvents extends DomainEvents {
 
 }
+// @extract-end
