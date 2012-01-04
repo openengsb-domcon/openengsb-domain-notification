@@ -29,7 +29,7 @@
   <properties>
     <bundle.symbolicName>org.openengsb.domain.notification</bundle.symbolicName>
     <bundle.namespace>org.openengsb.domain.notification</bundle.namespace>
-    <domain.name>Notification</domain.name>
+    <domain.name>NotificationDomain</domain.name>
     <openengsb.compile.version>2.1.2</openengsb.compile.version>
   </properties>
 
