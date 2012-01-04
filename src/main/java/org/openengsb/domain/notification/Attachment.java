@@ -15,27 +15,22 @@
  * limitations under the License.
  */
 
-package org.openengsb.domain.notification.model;
-
-import java.util.List;
+package org.openengsb.domain.notification;
 
 import org.openengsb.core.api.model.OpenEngSBModel;
 
-public interface Notification extends OpenEngSBModel {
+public interface Attachment extends OpenEngSBModel {
 
-    String getSubject();
+    void setData(byte[] data);
+    
+    byte[] getData();
+    
+    void setType(String type);
 
-    void setSubject(String subject);
+    String getType();
+    
+    void setName(String name);
 
-    String getMessage();
+    String getName();
 
-    void setMessage(String message);
-
-    String getRecipient();
-
-    void setRecipient(String recipient);
-
-    void setAttachments(List<Attachment> attachments);
-
-    List<Attachment> getAttachments();
 }
