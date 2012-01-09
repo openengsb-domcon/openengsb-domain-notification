@@ -1,3 +1,30 @@
+openengsb-domain-notification-2.0.0 2012-01-09
+---------------------------------------------------------------------
+
+This release upgrades the domain to a) work with the OpenEngSB 2.4.0 and b) incorporated the
+latest features of the new version (EDB integration, WSDLs for easy bridge integration, dedicated documentation).
+
+
+** Bug
+    * [OPENENGSB-2323] - adapt notification domain to current openengsb-framework
+    * [OPENENGSB-2582] - Domains and Connectors need to include our snapshot repo to work with deployed snapshots correctly
+
+** Improvement
+    * [OPENENGSB-1841] - Enhance notification domain with EDB CUD events
+    * [OPENENGSB-2586] - Include issuetracker, buildserver and inceptionYear from root
+    * [OPENENGSB-2598] - Make package structure flat to make wsdl-generation possible
+
+** New Feature
+    * [OPENENGSB-474] - notification templates in notification domain
+    * [OPENENGSB-2513] - move documentation to domain
+    * [OPENENGSB-2575] - Include wsdl definition from 2.4.0 parent
+
+** Task
+    * [OPENENGSB-2566] - upgrade openengsb-domain-parent to 2.3.0 in all domains
+    * [OPENENGSB-2596] - Adapt domain.name in domains to be e.g. AppointmentDomain instead of Appointment alone
+    * [OPENENGSB-2626] - release domain-notification-2.0.0
+
+
 openengsb-domain-notification-1.2.1 2011-05-23
 ---------------------------------------------------------------------
 
