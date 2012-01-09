@@ -15,7 +15,6 @@ latest features of the new version (EDB integration, WSDLs for easy bridge integ
     * [OPENENGSB-2598] - Make package structure flat to make wsdl-generation possible
 
 ** New Feature
-    * [OPENENGSB-474] - notification templates in notification domain
     * [OPENENGSB-2513] - move documentation to domain
     * [OPENENGSB-2575] - Include wsdl definition from 2.4.0 parent
 
