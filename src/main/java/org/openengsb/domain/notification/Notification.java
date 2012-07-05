@@ -19,23 +19,47 @@ package org.openengsb.domain.notification;
 
 import java.util.List;
 
-import org.openengsb.core.api.model.OpenEngSBModel;
+import org.openengsb.core.api.Constants;
+import org.openengsb.core.api.model.annotation.Model;
+import org.openengsb.labs.delegation.service.Provide;
 
-public interface Notification extends OpenEngSBModel {
+@Provide(context = { Constants.DELEGATION_CONTEXT_MODELS })
+@Model
+public class Notification {
+    private String subject;
+    private String message;
+    private String recipient;
+    private List<Attachment> attachments;
 
-    String getSubject();
+    public String getSubject() {
+        return subject;
+    }
 
-    void setSubject(String subject);
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
 
-    String getMessage();
+    public String getMessage() {
+        return message;
+    }
 
-    void setMessage(String message);
+    public void setMessage(String message) {
+        this.message = message;
+    }
 
-    String getRecipient();
+    public String getRecipient() {
+        return recipient;
+    }
 
-    void setRecipient(String recipient);
+    public void setRecipient(String recipient) {
+        this.recipient = recipient;
+    }
 
-    void setAttachments(List<Attachment> attachments);
+    public List<Attachment> getAttachments() {
+        return attachments;
+    }
 
-    List<Attachment> getAttachments();
+    public void setAttachments(List<Attachment> attachments) {
+        this.attachments = attachments;
+    }
 }

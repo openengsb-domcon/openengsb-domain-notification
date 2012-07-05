@@ -17,20 +17,38 @@
 
 package org.openengsb.domain.notification;
 
-import org.openengsb.core.api.model.OpenEngSBModel;
+import org.openengsb.core.api.Constants;
+import org.openengsb.core.api.model.annotation.Model;
+import org.openengsb.labs.delegation.service.Provide;
 
-public interface Attachment extends OpenEngSBModel {
+@Provide(context = { Constants.DELEGATION_CONTEXT_MODELS })
+@Model
+public class Attachment {
+    private byte[] data;
+    private String type;
+    private String name;
 
-    void setData(byte[] data);
-    
-    byte[] getData();
-    
-    void setType(String type);
+    public byte[] getData() {
+        return data;
+    }
 
-    String getType();
-    
-    void setName(String name);
+    public void setData(byte[] data) {
+        this.data = data;
+    }
 
-    String getName();
+    public String getType() {
+        return type;
+    }
 
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
