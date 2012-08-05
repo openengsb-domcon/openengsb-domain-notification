@@ -110,6 +110,18 @@
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>wagon-maven-plugin</artifactId>
       </plugin>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Domain-Name>notification</Domain-Name>
+            <Domain-Interface>org.openengsb.domain.notification.NotificationDomain</Domain-Interface>
+            <DomainEvents-Interface>org.openengsb.domain.notification.NotificationDomainEvents</DomainEvents-Interface>
+          </instructions>
+        </configuration>
+      </plugin> 
     </plugins>
   </build>
 
