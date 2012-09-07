@@ -30,7 +30,8 @@
     <bundle.symbolicName>org.openengsb.domain.notification</bundle.symbolicName>
     <bundle.namespace>org.openengsb.domain.notification</bundle.namespace>
     <domain.name>NotificationDomain</domain.name>
-    <openengsb.compile.version>3.0.0-SNAPSHOT</openengsb.compile.version>
+    <openengsb.api.version>3.0.0-SNAPSHOT</openengsb.api.version>
+	<openengsb.version.range>[3,4)</openengsb.version.range>
     <labs.delegation.version>0.1.0</labs.delegation.version>
   </properties>
 
@@ -132,13 +133,7 @@
       <groupId>org.openengsb.framework</groupId>
       <artifactId>org.openengsb.framework.api</artifactId>
       <scope>provided</scope>
-      <version>${openengsb.compile.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.openengsb.framework</groupId>
-      <artifactId>org.openengsb.framework.common</artifactId>
-      <scope>provided</scope>
-      <version>${openengsb.compile.version}</version>
+      <version>${openengsb.api.version}</version>
     </dependency>
     <dependency>
       <groupId>org.openengsb.labs.delegation</groupId>
